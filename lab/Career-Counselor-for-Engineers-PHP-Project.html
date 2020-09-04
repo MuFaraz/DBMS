@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="shortcut icon" type="image/x-icon" href="https://1000projects.com/user/img/favicon.ico">
+      <title>Career Counselor for Engineers PHP Project Source Code & Database</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="https://1000projects.com/user/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+      <link href="https://1000projects.com/user/css/custom.css" rel="stylesheet">
+      <!-- jQuery -->
+      <script src="https://1000projects.com/user/js/jquery-1.11.3.min.js"></script>
+      <script src="https://1000projects.com/uploads/ckeditor/ckeditor.js"></script>
+      <script type="text/javascript">
+         var base_url = "https://1000projects.com/";
+      </script>
+      <style type="text/css">
+         .search-div{
+         width: 40%;
+         }
+         .search-input{
+         width: 99% !important;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+         <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="https://1000projects.com/"><span class="glyphicon glyphicon-globe"></span> 1000 Projects</a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+               <ul class="nav navbar-nav">
+                  <li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+               </ul>
+               <!-- Search -->
+               <form action="https://1000projects.com/search" class="navbar-form navbar-center" method="GET" role="search">
+                  <div class="form-group search-div">
+                     <input type="text" name="search" value="" class="form-control search-input" required="">
+                  </div>
+                  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search</button>
+                  				  <ul class="nav navbar-nav navbar-right">
+				      <li>
+                       <a href="https://1000projects.com/signup" >Upload Your Project</a>
+                     </li>
+				  </ul>
+				                 </form>
+                             <!-- <ul class="nav navbar-nav navbar-right" style="top: 0;margin: 0;position: absolute;right: 74px;">
+                  <li >
+                     <a href="https://1000projects.com/post-article">Post your Article </a>
+                  </li>
+                  <li>
+                     <a href="https://1000projects.com/ask-question">Ask Question</a>
+                  </li>
+                  <li >
+                     <a href="https://1000projects.com/post-article">Login</a>
+                  </li>
+                  <li>
+                     <a href="https://1000projects.com/ask-question">Ask question</a>
+                  </li>
+               </ul> -->
+                           </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container -->
+      </nav><div class="container-fluid">
+<!-- Left Column -->
+<div class="col-sm-3">
+   <!-- List-Group Panel -->
+      <div class="panel panel-default">
+      <div class="panel-heading">
+         <a href="https://1000projects.com/categories/" style="text-decoration:none;">
+            <h1 class="panel-title"><span class="glyphicon glyphicon-random"></span> Categories</h1>
+         </a>
+      </div>
+      <ul class="list-group">
+                  <li class="list-group-item"><a href="https://1000projects.com/categories/.Net" >.Net<span class="pull-right badge">(16)</span></a></li>  
+                  <li class="list-group-item"><a href="https://1000projects.com/categories/Android" >Android<span class="pull-right badge">(4)</span></a></li>  
+                  <li class="list-group-item"><a href="https://1000projects.com/categories/Cplus-plus" >C++<span class="pull-right badge">(2)</span></a></li>  
+                  <li class="list-group-item"><a href="https://1000projects.com/categories/ECE-&-EEE" >ECE & EEE<span class="pull-right badge">(2)</span></a></li>  
+                  <li class="list-group-item"><a href="https://1000projects.com/categories/Hadoop" >Hadoop<span class="pull-right badge">(0)</span></a></li>  
+                  <li class="list-group-item"><a href="https://1000projects.com/categories/Java" >Java<span class="pull-right badge">(48)</span></a></li>  
+                  <li class="list-group-item"><a href="https://1000projects.com/categories/Matlab" >Matlab<span class="pull-right badge">(2)</span></a></li>  
+                  <li class="list-group-item"><a href="https://1000projects.com/categories/PHP" >PHP<span class="pull-right badge">(7)</span></a></li>  
+                  <li class="list-group-item"><a href="https://1000projects.com/categories/Python" >Python<span class="pull-right badge">(3)</span></a></li>  
+                  <li class="list-group-item"><a href="https://1000projects.com/categories/QlikView" >QlikView<span class="pull-right badge">(3)</span></a></li>  
+                  <li class="list-group-item"><a href="https://1000projects.com/categories/VB" >VB<span class="pull-right badge">(1)</span></a></li>  
+                  <li class="list-group-item"><a href="https://1000projects.com/categories/VLSI" >VLSI<span class="pull-right badge">(0)</span></a></li>  
+               </ul>
+      <!-- <div class="panel-heading">
+         <a href="https://1000projects.com/categories/" style="text-decoration:none;"><h1 class="panel-title"><span class="glyphicon glyphicon-hand-right"></span> Read more</h1></a>
+         
+         </div> --> 
+   </div>
+      <!-- List-Group Panel -->
+   </div>
+<!--/Left Column--><!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+<style>
+#div_downlaod{
+	display: none;
+}
+</style>
+<div class="col-sm-6">
+	<div class="col-sm-12 slug_url">
+		<a href="https://1000projects.com/" style="text-decoration:none;">Home </a>
+				<a href="https://1000projects.com/categories/PHP" style="text-decoration: none;"> / PHP</a>
+				<a href="" style="text-decoration:none;" class="active"> / Career-Counselor-for-Engineers-PHP-Project</a>
+	</div>
+	<!-- Alert -->
+	<!-- <div class="alert alert-success alert-dismissible" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<strong>Synergize:</strong> Seamlessly visualize quality intellectual capital!
+	</div> -->
+	
+	<!-- Articles -->
+	
+		
+	<div class="row">
+		<article class="col-xs-12">
+			<h2>Career Counselor for Engineers PHP Project</h2>
+			<ul class="list-inline">
+				<li style="color: #337ab7;"><span class="glyphicon glyphicon-user"></span> 
+					Sadik Diwan				</li>
+				<li style="color: #337ab7;">
+					<span class="glyphicon glyphicon-time"></span> 07 Jul 2018				</li>
+				<li>
+					<a href="https://1000projects.com/categories/PHP" style="text-decoration: none;">PHP</a>
+				</li>
+			</ul>
+			<p>Career Counselor for Engineers PHP Project Source Code & Database</p>
+			<p><p>This website based on HTML, CSS, and PHP and I'm mentioning my project synopsis below. </p>
+
+<p>This project is called <strong>Career Counselor for Engineers System</strong> where a student can easily find a tutor and others.</p>
+
+<h2><strong>Student Side Features: </strong></h2>
+
+<p>He should give all his details like Name, Email, Phone Number area and pin code at the time of sign up.</p>
+
+<p>After the <strong>LogIn</strong> student must have the option to post his need of <strong>Tutor</strong>. In that he needs to give his class, subjects need to be taught. This should be controlled by the student. When he gets the tutor he can delete his need of a tutor in the site.</p>
+
+<p>Based on the details filled by a student, a tutor can find the student.</p>
+
+<p>In the home page of the student, he should be able to find the tutor based on the pin code, location through filter(just as online shopping filters) so that student can get the information and contact details of the tutors who are available nearby him and the tutor rating which is given by the student in the feedback.</p>
+
+<p>The student should feedback the tutor (Tutor feedback HTML file is attached with the mail).</p>
+
+<h2><strong>Tutor Side Features:</strong> </h2>
+
+<p>He should give all his details like Name, profile picture, Email, Phone Number, age, subjects he can teach, qualification, area and pin code at the time of sign up.</p>
+
+<p>Tutor profile should also have the filters as in students profile to find the student. So that the tutor can get student details how to require the tutor.</p>
+
+<p>After login in the main profile page should consist of all the details (students/tutor) to the<strong> Left</strong> side of the page and to the right there must be filters.</p>
+
+<h2><strong>Project Database details:</strong></h2>
+
+<p><strong>Database Name</strong>: tutor_student_portal</p>
+
+<p><strong>Table 1</strong>: class_name</p>
+
+<p>Where class_name includes id, class_name</p>
+
+<p><strong>Table 2</strong>: countlikes</p>
+
+<p>Where countlikes table includes uname,  fromid, countoflikes</p>
+
+<p><strong>Table 3</strong>: feedback</p>
+
+<p>Where feedback table includes id, Overall_Rating, Teaching, Clearing_Doubts</p>
+
+<p><strong>Table 4</strong>: image </p>
+
+<p>Where image table includes id, path, useremail, relationship.</p>
+
+<p><strong>Table 5</strong>: registration</p>
+
+<p>Where Registration table includes id, fname, lname, email, age,  gender, profile_pic, subject_tech, qualification,  pin_code, password, cpassword,<br />
+ mobile, user, address, status.</p>
+
+<p><strong>Table 6</strong>: subject</p>
+
+<p>Where Subject table includes id, subject_name</p>
+
+<p><strong>Table 7</strong>:  ulikes</p>
+
+<p>Where ulikes table consists of imagepath, fromid, uname, status</p>
+
+<p><strong>Table 8</strong>: video_uploaded_by</p>
+
+<p>Where Subject table includes id, video_location, video_name, student_select_sub,   class_name,   text_msg, lect_email.</p>
+</p>
+			<!-- https://1000projects.com/download/MTI5/Career-Counselor-for-Engineers-PHP-Project -->
+
+			
+						
+			<p> 			
+			 
+			  
+			  <a href='https://1000projects.com'> Login here to download</a> Career Counselor for Engineers PHP Project</p>
+			</form>
+			<!--
+			<div id="div_downlaod">
+						<div class="row">
+				<article class="col-xs-12">
+					<h2>Career Counselor for Engineers PHP Project</h2>
+					<form id="download_form" action="javascript:void(0)" class="form-horizontal" role="form">
+						<input type="hidden" name="article_id" value="129">
+						<div class="form-group">
+							<div class="col-md-9">
+
+
+								<div class="g-recaptcha" data-sitekey="6LeWzz8UAAAAABlehAsD_LQYmICD1CPe9u2F2w0s"></div>
+							</div>
+						</div>
+						<div class="form-group">
+							                                 
+							<div class="col-md-9">
+								<button id="download_form_btn" type="submit" class="btn btn-info"> Download</button>
+							</div>
+						</div>
+					</form>
+					<div id="comment_message"></div>
+				</article>
+			</div>
+			<hr>
+						</div> -->
+			<!-- <p><b>Tags: </b> 
+							</p>
+			<br>
+			<p><h4>Add Comments: </h4></p>
+			<div class="col-sm-8">
+				<form action="javascript:void(0)" method="POST" id="user_comment">
+					<input type="hidden" name="article_id" value="129">
+					<input type="hidden" name="user_id" value="0">
+					
+										<div class="form-group">
+						<input type="text" class="form-control" id="user_name" name="user_name" placeholder="Full Name" required="true">
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" id="user_email" name="user_email" placeholder="Email" required="true">
+					</div>
+										<div class="form-group">
+						<textarea name="comment" id="comment" class="form-control" placeholder="Enter Your Comments..." style="height: 103px;"></textarea>
+					</div>
+					<div class="form-group">
+						<div id="comment_recapcha"></div>
+					</div>
+					<button type="submit" id="add_comment" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+			<div class="col-sm-4"></div>
+			<div class="col-sm-12"><div id="comment_message"></div></div>
+			<div class="col-sm-12">
+				<br>
+				<p><h4>All Comments:</h4></p>
+								</div> -->
+			</article>
+		</div>
+		<hr>
+			</div><!--/Center Column-->
+	<script type="text/javascript">
+	// Start Add comment
+
+	$("#add_comment").on('click',(function(e) {
+		$('#comment_message').html(' ');
+		$.ajax({
+			url: base_url+"UserController/add_user_comment",
+			type: "POST",
+			data: new FormData($('#user_comment')[0]),
+			contentType: false,
+			cache: false,
+			processData:false,
+			success: function(res)
+			{
+				var data = JSON.parse(res);
+				if(data.status){
+					$('#comment_message').html(data.message);
+					$('#user_comment')[0].reset();
+				}else{
+					$('#comment_message').html(data.message);
+				}
+			},
+			error: function()
+			{
+			}
+		});
+		
+	}));
+
+	$("#download_articls").click(function()
+	{
+		$("#div_downlaod").show();
+		return false;
+
+	});
+	// End Comment
+</script>
+<script type="text/javascript">
+	// Start Add comment
+	$("#download_form_btn").on('click',(function(e) {
+		$('#comment_message').html(' ');
+		$.ajax({
+			url: base_url+"UserController/download_article_form",
+			type: "POST",
+			data: new FormData($('#download_form')[0]),
+			contentType: false,
+			cache: false,
+			processData:false,
+			success: function(res)
+			{
+				var data = JSON.parse(res);
+				if(data.status){
+					console.log(data.message);
+					window.location=data.message;
+					//window.reload();
+					//$('#comment_message').html(data.message);
+				}else{
+					$('#comment_message').html(data.message);
+				}
+			},
+			error: function()
+			{
+			}
+	    });
+		
+	}));
+	// End Comment
+</script>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- Right Column -->
+	<div class="col-sm-3">
+		<!-- Form -->
+				<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<span class="glyphicon glyphicon-log-in"></span>
+				Account Login
+				</h3>
+			</div>
+			<div class="panel-body">
+				<form action="javascript:void(0)" method="POST" id="user_login">
+					<div id="login_message"></div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="uid" name="user_email" placeholder="Email" required="true">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" id="pwd" name="user_password" placeholder="Password" required="true">
+					</div>
+				 <!--   <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="6LeWzz8UAAAAABlehAsD_LQYmICD1CPe9u2F2w0s" style="transform:scale(0.88);-webkit-transform:scale(0.88);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+                    </div>  -->
+					
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+					 
+					<div class="row">
+    <div class="col-md-12">
+	<button type="submit" id="login_user" class="btn btn-default btn-block">Login</button>
+                  <!--  <a id="" href="https://1000projects.com/Facebook/" class="btn btn-primary btn-block"><i class="fa fa-facebook-official"> Sign in with Facebook</i></a>
+					<a id="" href="https://1000projects.com/" class="btn btn-danger btn-block"><i class="fa fa-google"> Sign in with Gmail</i>   </a> -->
+    </div>
+  </div>
+            </form><br>
+			  New users must <a href="https://1000projects.com/signup">register now</a>. For <a href="https://1000projects.com/signup/forgot_pass">Forgot password</a> click here.
+			</div>
+		</div>
+				<!-- Progress Bars -->
+		<!-- Carousel -->
+   <!--	 
+			<div class="panel panel-default">
+			
+			<div class="panel-heading">
+				<a href="https://1000projects.com/questions" style="text-decoration:none;"><h1 class="panel-title"><span class="glyphicon glyphicon-bullhorn"></span> Questions</h1></a>
+			</div>
+			<div class="list-group">
+				
+						
+
+								<a href="https://1000projects.com/ask/26/Data-Mining-Project-Description" class="list-group-item">Data Mining Project Description</a>
+				
+						
+
+								<a href="https://1000projects.com/ask/29/Pet-Parlour-Android-App" class="list-group-item">Pet Parlour Android App</a>
+				
+						
+
+								<a href="https://1000projects.com/ask/30/Smart-Tendering-Android-App" class="list-group-item">Smart Tendering Android App</a>
+				
+						
+
+								<a href="https://1000projects.com/ask/31/Travel-Experience-Sharing-Web-Site" class="list-group-item">Travel Experience Sharing Web Site</a>
+				
+						
+
+								<a href="https://1000projects.com/ask/32/Probability-Tutor-Package" class="list-group-item">Probability Tutor Package</a>
+											<!-- <div class="panel-heading">
+				<a href="https://1000projects.com/questions" style="text-decoration:none;"><h1 class="panel-title"><span class="glyphicon glyphicon-hand-right"></span> Read More</h1></a>
+			</div>
+				 -->
+			</div>
+			
+		</div>
+			</div><!--/Right Column -->
+</div><!--/container-fluid--><!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+
+<footer>
+    <hr>
+    <div class="small-print">
+        <div class="container">
+            <p><a href="#">About us</a> | <a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact us</a></p>
+            <p>Copyright &copy; 1000projects.com 2018 </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- User Registration Modal -->
+
+<div class="modal fade" id="myModal" role="dialog">
+
+    <div class="modal-dialog" style="width: 450px;">
+
+        <!-- Modal content-->
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                <h4 class="modal-title">USER REGISTRATION</h4>
+
+            </div>
+
+            <div class="modal-body">
+
+                <form action="javascript:void(0)" class="form-horizontal" method="post" id="user_registration">
+
+
+
+                    <div class="form-group row">
+
+                        <label class="col-sm-12 form-control-label">Name</label>
+
+                        <div class="col-sm-12">
+
+                            <input type="text" class="form-control" name="name" id="name" required="">
+
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="form-group row">
+
+							<label class="col-sm-12 form-control-label">Mobile</label>
+
+							<div class="col-sm-12">
+
+								<input type="text" class="form-control" name="mobile" id="mobile" required="">
+
+							</div>
+
+						</div> -->
+
+                    <div class="form-group row">
+
+                        <label class="col-sm-12 form-control-label">Email</label>
+
+                        <div class="col-sm-12">
+
+                            <input type="email" class="form-control" name="email" id="email" required="">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+
+                        <label class="col-sm-12 form-control-label">Password</label>
+
+                        <div class="col-sm-12">
+
+                            <input type="password" class="form-control" name="password" id="password" required="">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+
+                        <label class="col-sm-12 form-control-label">Confirm Password</label>
+                        <div class="col-sm-12">
+                            <input type="password" class="form-control" name="confirm_password" id="confirm_password" required="">
+                            <span id="confirm_message" style="color: red;"></span>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="form-group row">
+
+							<label class="col-sm-12 form-control-label">Address</label>
+
+							<div class="col-sm-12">
+
+								<textarea class="form-control" rows="5" name="address" required="" id="Address"></textarea>
+
+							</div>
+
+						</div> -->
+
+                    <div class="form-group">
+
+                        <div class="col-md-12">
+
+                            <!-- <div class="g-recaptcha" data-sitekey="6LejEjkUAAAAAPcutGGgOF_8bW5pgQc0dgr9M4gO"></div> -->
+
+                            <div id="signup_recaptcha"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4 offset-sm-3">
+                            <button type="submit" id="add_user" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="message"></div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<!-- End User Registration Model -->
+
+<!--<script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>-->
+
+<script src='https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit' async defer></script>
+
+
+
+<script type="text/javascript">
+    // Start User Registration
+
+    //$("#add_user").on('click',(function(e) {
+
+    $('#user_registration').submit(function() {
+
+        $('#message').html('');
+
+        $('#confirm_message').html('');
+
+        if ($('#password').val() == $('#confirm_password').val()) {
+
+            $.ajax({
+
+                url: base_url + "UserController/user_registration",
+
+                type: "POST",
+
+                data: new FormData($('#user_registration')[0]),
+
+                contentType: false,
+
+                cache: false,
+
+                processData: false,
+
+                success: function(res)
+                {
+                	console.log(res);
+
+                    var data = JSON.parse(res);
+                     console.log(data);
+
+                    if (data.status==1) {
+
+                    		
+                        $('#message').html(data.message);
+
+                    } else {
+
+                        $('#message').html(data.message);
+
+                    }
+
+                },
+
+                
+
+            });
+
+        } else {
+
+            $('#confirm_message').html('Confirm Passward Not Matched');
+
+        }
+
+    });
+
+    // End User Registration
+
+    // Start User Login
+
+    $("#user_login").submit(function() {
+
+        $('#login_message').html('');
+
+        $.ajax({
+
+            url: base_url + "UserController/user_login",
+
+            type: "POST",
+
+            data: new FormData($('#user_login')[0]),
+
+            contentType: false,
+
+            cache: false,
+
+            processData: false,
+
+            success: function(res)
+
+            {
+
+                var data = JSON.parse(res);
+
+                if (data.status) {
+
+                    $('#login_message').html(data.message);
+
+                    window.location.href = base_url;
+
+                } else {
+
+                    $('#login_message').html(data.message);
+
+                }
+
+            },
+
+            error: function()
+
+            {
+
+            }
+
+        });
+
+    });
+
+    // End User Login
+
+
+
+    var recaptcha1;
+
+    var recaptcha2;
+
+    //var myCallBack = function() {
+
+    /*grecaptcha.render('add_guest_article', {
+
+      'sitekey' : '6LejEjkUAAAAAPcutGGgOF_8bW5pgQc0dgr9M4gO',
+
+      'theme' : 'light',
+
+    });*/
+
+
+
+    /*recaptcha2 = grecaptcha.render('signup_recaptcha', {
+
+      'sitekey' : '6LejEjkUAAAAAPcutGGgOF_8bW5pgQc0dgr9M4gO',
+
+      'theme' : 'light',
+
+    });*/
+
+    //};
+
+    var CaptchaCallback = function() {
+
+        if ($('#signup_recaptcha').length) {
+
+            grecaptcha.render('signup_recaptcha', {
+                'sitekey': '6LeWzz8UAAAAABlehAsD_LQYmICD1CPe9u2F2w0s'
+
+            });
+
+        }
+
+        if ($('#add_guest_article').length) {
+
+            grecaptcha.render('add_guest_article', {
+                'sitekey': '6LeWzz8UAAAAABlehAsD_LQYmICD1CPe9u2F2w0s'
+
+            });
+
+        }
+
+        if ($('#comment_recapcha').length) {
+
+            grecaptcha.render('comment_recapcha', {
+                'sitekey': '6LeWzz8UAAAAABlehAsD_LQYmICD1CPe9u2F2w0s'
+
+            });
+
+        }
+
+
+
+    };
+</script>
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="https://1000projects.com/user/js/bootstrap.min.js"></script>
+
+
+
+<!-- IE10 viewport bug workaround -->
+
+<script src="https://1000projects.com/user/js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+<!-- Placeholder Images -->
+
+<script src="https://1000projects.com/user/js/holder.min.js"></script>
+
+
+
+</body>
+
+
+
+</html>
